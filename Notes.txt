@@ -5,9 +5,42 @@ Need to add:
         b. display list of items: ITEM NAME:        $PRICE
         c. cart items counter
         d. checkout function: Checkout Button, subtotal, tax, total
+        e. Quantity button
+        f. Delete button
     ii. cart functionality
         a. when "Add to Cart" is clicked, adds data from target to a new item, populates cart.
+            1. creates instance of "Grocery Item" class (see below)
+            2. adds item to cart display
+            3. adds item price to subtotal
+            4. adds item to cart's local storage
         b. displays subtotal, tax, total
             1. subtotal = sum of prices of all items in cart
             2. tax: CA sales tax = 0.0725
-            3. total = subtotal + tax
+            3. total = subtotal + (subotal * tax)
+        c. Quantity button
+            1. Quantity multiplies the number of instances of that item
+            2. In a fuller app, would tell the business the specific quantity of that item needed to be pulled from inventory and shipped. For now: only multiply item price by quantity for subotal calculation.
+        d. Delete button
+            1. Removes that item from the cart
+                a. delete the instance of the grocery item
+                b. subtract the item's price from subtotal.
+                c. removes the item from cart's local storage
+
+2. Grocery item
+    i. Grocery item visuals
+        a. Display a card for product
+            1. card-image
+            2. card-title
+            3. card-text
+            4. card-price
+            5. add to cart button
+    ii. Grocery item functionality
+        a. create a class for "grocery items"
+            1. Goal is to use grocery item data to populate the shopping cart.
+            2. Create variables for:
+                i. Item name
+                ii. Item price 
+        b. on clicking the target item's "add to cart" button:
+            1. construct a new "grocery item"
+                i. Item name = data from target's card-title
+                ii. Item price = data from target's card-price

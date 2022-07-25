@@ -6923,12 +6923,8 @@ textarea.form-control-lg {
   left: 0;
 }
 
-.offcanvas-backdrop.fade {
+.offcanvas-backdrop.fade, .offcanvas-backdrop.show {
   opacity: 0;
-}
-
-.offcanvas-backdrop.show {
-  opacity: .5;
 }
 
 .offcanvas-header {
@@ -12012,6 +12008,36 @@ textarea.form-control-lg {
 
 .card-title {
   text-transform: capitalize;
+}
+
+.offcanvas-header {
+  background-color: #0f0f06;
+  font-size: 2rem;
+}
+
+.offcanvas-header .btn-close {
+  color: #fff;
+  background-color: #fff;
+}
+
+.offcanvas-title {
+  color: #fff;
+}
+
+.shopping-cart .btn {
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 120px;
+  right: 30px;
+}
+
+.checkout-section {
+  background-color: #949147;
+}
+
+.checkout-section span {
+  text-align: end;
 }
 
 /*# sourceMappingURL=index.044e704e.css.map */

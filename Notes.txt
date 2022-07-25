@@ -1,7 +1,7 @@
 Need to add:
 1. Cart
     i. cart visuals
-        a. offscreen popup on click
+        a. offcanvas popup on click OR if an item is in cart, display popup
         b. display list of items: ITEM NAME:        $PRICE
         c. cart items counter
         d. checkout function: Checkout Button, subtotal, tax, total

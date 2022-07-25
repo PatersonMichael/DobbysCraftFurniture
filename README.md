@@ -9,3 +9,7 @@
 
 Develop an interactive web application that takes user input via an "add to cart" function, storing the necessary data from each grocery item to the user's shopping cart.
 
+# Plan
+
+See the Notes.txt file included to see my general plan for the application, organized in a way that divides visual features and their behavioral functions.
+

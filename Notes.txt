@@ -13,6 +13,9 @@ Need to add:
             2. adds item to cart display
             3. adds item price to subtotal
             4. adds item to Cart Object
+            5. checks if item already exists in cart
+                i. If there is already an item, add one to the quantity of that item in the cart.
+                ii. If not, add a new instance of that item to the cart.
         b. displays subtotal, tax, total
             1. subtotal = sum of prices of all items in cart
             2. tax: CA sales tax = 0.0725
@@ -22,9 +25,9 @@ Need to add:
             2. In a fuller app, would tell the business the specific quantity of that item needed to be pulled from inventory and shipped. For now: only multiply item price by quantity for subotal calculation.
         d. Delete button
             1. Removes that item from the cart
-                a. delete the instance of the Product item
-                b. subtract the item's price from subtotal.
-                c. removes the item from Cart Object
+                i. delete the instance of the Product item
+                ii. subtract the item's price from subtotal.
+                iii. removes the item from Cart Object
         e. Cart Object
             1. Stores Product Items Data
                 ex: Cart {

@@ -9,10 +9,10 @@ Need to add:
         f. Delete button
     ii. cart functionality
         a. when "Add to Cart" is clicked, adds data from target to a new item, populates cart.
-            1. creates instance of "Grocery Item" class (see below)
+            1. creates instance of "Product Item" class (see below)
             2. adds item to cart display
             3. adds item price to subtotal
-            4. adds item to cart's local storage
+            4. adds item to Cart Object
         b. displays subtotal, tax, total
             1. subtotal = sum of prices of all items in cart
             2. tax: CA sales tax = 0.0725
@@ -22,25 +22,38 @@ Need to add:
             2. In a fuller app, would tell the business the specific quantity of that item needed to be pulled from inventory and shipped. For now: only multiply item price by quantity for subotal calculation.
         d. Delete button
             1. Removes that item from the cart
-                a. delete the instance of the grocery item
+                a. delete the instance of the Product item
                 b. subtract the item's price from subtotal.
-                c. removes the item from cart's local storage
+                c. removes the item from Cart Object
+        e. Cart Object
+            1. Stores Product Items Data
+                ex: Cart {
+                    item1: {
+                        name: "name",
+                        price: priceFloat,
+                        qty: qtyInt
+                    },
+                    item2: {...}
+                }
+            2. Store this data in local storage?
+            3. Could run a forEach, and use the data from here to populate the shopping cart's html?    
+                i. something like: forEach item create a new HTML element in the shopping cart that houses the item name and price: `<p class="cart-item"><span class="cart-item-name">${itemName}</span><span class="cart-item-price">${itemPrice}</span></p>`
 
-2. Grocery item
-    i. Grocery item visuals
+2. Product item
+    i. Product item visuals
         a. Display a card for product
             1. card-image
             2. card-title
             3. card-text
             4. card-price
             5. add to cart button
-    ii. Grocery item functionality
-        a. create a class for "grocery items"
-            1. Goal is to use grocery item data to populate the shopping cart.
+    ii. Product item functionality
+        a. create a class for "Product items"
+            1. Goal is to use Product item data to populate the shopping cart.
             2. Create variables for:
                 i. Item name
                 ii. Item price 
         b. on clicking the target item's "add to cart" button:
-            1. construct a new "grocery item"
+            1. construct a new "Product item"
                 i. Item name = data from target's card-title
                 ii. Item price = data from target's card-price

@@ -1,6 +1,7 @@
 # Dobby's Craft Furniture
-![Alt text](/assets/images/2730308_dobby_elf_harry_potter_solid_icon.svg)
 ### A shopping cart app using vanilla Javascript.
+![Alt text](/assets/images/2730308_dobby_elf_harry_potter_solid_icon.svg)
+
 
 ---
 

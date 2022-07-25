@@ -1,0 +1,13 @@
+Need to add:
+1. Cart
+    i. cart visuals
+        a. offscreen popup on click
+        b. display list of items: ITEM NAME:        $PRICE
+        c. cart items counter
+        d. checkout function: Checkout Button, subtotal, tax, total
+    ii. cart functionality
+        a. when "Add to Cart" is clicked, adds data from target to a new item, populates cart.
+        b. displays subtotal, tax, total
+            1. subtotal = sum of prices of all items in cart
+            2. tax: CA sales tax = 0.0725
+            3. total = subtotal + tax

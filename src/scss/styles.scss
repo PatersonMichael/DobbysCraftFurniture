@@ -41,3 +41,51 @@
 .card-title {
     text-transform: capitalize;
 }
+
+// Shopping cart
+
+.offcanvas-header {
+    background-color: $secondary;
+    font-size: 2rem;
+
+    .btn-close {
+        color: $white;
+        background-color: $white;
+    }
+}
+.offcanvas-title {
+    color: $white;
+}
+
+.shopping-cart {
+    .btn {
+        color: $white;
+        display: block;
+        position: absolute;
+        top: 120px;
+        right: 30px;
+    }
+}
+
+.checkout-section {
+    background-color: $primary;
+
+    span {
+        text-align: end;
+    }
+
+    .checkout-button {
+        position: absolute;
+    }
+}
+
+// cart list
+
+.product {
+    border-top: 0.25px solid black;
+
+    .qty-box {
+        width: 20px;
+        height: 20px;
+    }
+}

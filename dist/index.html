@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.bf06c0ce.css">
+    <link rel="stylesheet" href="/index.c7c1b2f3.css">
+    <link rel="stylesheet" href="/index.86dc70ca.css">
 
 </head>
 <body>
@@ -92,6 +95,47 @@
                   </div></div>
             </div>
         </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section class="shopping-cart">
+      <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <i class="fa-solid fa-cart-shopping"></i> Shopping Cart
+      </button>
+
+      <div class="offcanvas offcanvas-end" data-bs-backdrop="static" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel shadow-lg">Shopping Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+
+          <!-- cart list -->
+          <div class="container products-container p-3 m-0">
+            <!-- start product -->
+            <div class="row product">
+              <div class="col-12">
+                <p class="product-title">Title 
+                <span class="product-price position-absolute start-50">
+                  Price
+                </span>
+                </p>
+              </div>
+            </div>
+          </div>
+            <!-- end product -->
+
+          <!-- totals and checkout -->
+          <div class="container checkout-section position-absolute bottom-0 pb-5">
+            <div class="container mt-4">
+            <p>Subtotal: <span class="subtotal position-absolute start-50">$1500</span></p>
+            <p class="border-bottom pb-1">Tax: <span class="tax position-absolute start-50">$108.75</span></p>
+            <p class="fw-bold">Total: <span class="total position-absolute start-50">$1608.75</span></p>
+          </div>
+          <button class="checkout-button btn btn-secondary">Checkout</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- scripts -->

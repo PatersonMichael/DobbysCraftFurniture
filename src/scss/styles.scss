@@ -73,4 +73,19 @@
     span {
         text-align: end;
     }
+
+    .checkout-button {
+        position: absolute;
+    }
+}
+
+// cart list
+
+.product {
+    border-top: 0.25px solid black;
+
+    .qty-box {
+        width: 20px;
+        height: 20px;
+    }
 }

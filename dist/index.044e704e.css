@@ -12040,4 +12040,18 @@ textarea.form-control-lg {
   text-align: end;
 }
 
+.checkout-section .checkout-button {
+  position: absolute;
+}
+
+.product {
+  border-top: .25px solid #000;
+}
+
+.product .qty-box {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=index.044e704e.css.map */

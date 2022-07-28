@@ -12053,4 +12053,10 @@ textarea.form-control-lg {
   height: 20px;
 }
 
+.cart-item-delete {
+  color: #dc3545;
+  background-color: #0000;
+  border: none;
+}
+
 /*# sourceMappingURL=index.044e704e.css.map */
